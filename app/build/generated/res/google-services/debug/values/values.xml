@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">243853881698-slpbl9flju73a1kve65grgbavmt7cgq2.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">243853881698</string>
+    <string name="google_api_key" translatable="false">AIzaSyByk8WtxmQT4fPdKe2cx1WzxBLpNBeiDgo</string>
+    <string name="google_app_id" translatable="false">1:243853881698:android:162b7353d675bd9711bc3b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyByk8WtxmQT4fPdKe2cx1WzxBLpNBeiDgo</string>
+    <string name="google_storage_bucket" translatable="false">flexjobs-49eca.appspot.com</string>
+    <string name="project_id" translatable="false">flexjobs-49eca</string>
+</resources>

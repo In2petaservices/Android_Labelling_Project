@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.Parthav46:HttpRequest:1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2aa7de46eb2c6b24aca5c107669a7f9b/transformed/jetified-HttpRequest-1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2aa7de46eb2c6b24aca5c107669a7f9b/transformed/jetified-HttpRequest-1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2aa7de46eb2c6b24aca5c107669a7f9b/transformed/jetified-HttpRequest-1.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Parthav46/HttpRequest/1.0/b0a1298e8fc75af73f0f88640f320e04a1b9517b/HttpRequest-1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

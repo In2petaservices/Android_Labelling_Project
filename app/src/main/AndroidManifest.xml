@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nsa.flexjobs">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name="com.nsa.flexjobs.service.App"
+        android:allowBackup="true"
+        android:configChanges="orientation|screenSize"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LabelImages"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.nsa.flexjobs.activities.ChatsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.nsa.flexjobs.activities.MessageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".chat.MessageActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.nsa.flexjobs.maineditor.MainAnnotateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.nsa.flexjobs.activities.TaskInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.nsa.flexjobs.paytm.PaytmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.nsa.flexjobs.activities.ReferActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.nsa.flexjobs.activities.HelpSupportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.nsa.flexjobs.activities.MyTasksActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.nsa.flexjobs.activities.WalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.nsa.flexjobs.activities.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.nsa.flexjobs.activities.ApplyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.nsa.flexjobs.activities.TaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.nsa.flexjobs.activities.SignInActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <service android:name="com.nsa.flexjobs.service.FirebaseMessageReceiver">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.nsa.flexjobs.activities.ListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.nsa.flexjobs.testeditor.TestAnnotateActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service android:name="com.nsa.flexjobs.service.UploadService" />
+    </application>
+
+</manifest>
